@@ -35,5 +35,14 @@ jobs:
       - name: Check running containers
         run: docker compose -f docker-compose.yml ps
 
+      - name: Run Pytest tests in Docker container
+        run: |
+          docker run --rm \
+            --network host \
+            -v ${{ github.workspace }}:/app \
+            -w /app \
+            python:3.10 \
+            bash -c "pip install pytest requests psycopg2 redis && pytest tests/test_basics.py"
+
       - name: Stop containers
         run: docker compose -f docker-compose.yml down

@@ -1,6 +1,5 @@
 # region				-----External Imports-----
 import logging
-from tests.factories.user import *
 
 # endregion
 
