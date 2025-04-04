@@ -1,5 +1,4 @@
 # region				-----External Imports-----
-import pydantic
 
 # endregion
 

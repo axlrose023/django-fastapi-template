@@ -103,8 +103,8 @@ def test_invalid_method(
         f"{BASE_URL}/docs"
     )
     assert response.status_code != 200, (
-        f"PUT request unexpectedly returned "
-        f"status 200"
+        "PUT request unexpectedly returned "
+        "status 200"
     )
 
 

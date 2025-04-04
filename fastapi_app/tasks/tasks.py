@@ -1,5 +1,4 @@
 # region				-----External Imports-----
-import celery
 import logging
 # endregion
 

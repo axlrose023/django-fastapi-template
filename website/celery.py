@@ -2,7 +2,8 @@
 from __future__ import absolute_import, unicode_literals
 from celery import signals
 from celery import Celery
-import os, sys
+import os
+import sys
 import logging
 
 # endregion
